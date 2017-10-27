@@ -12,7 +12,8 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
-    
+    @IBOutlet var textField2: UITextField!
+
     //constant number formatter
     let numberFormatter: NumberFormatter = {
         let nf = NumberFormatter()
@@ -61,9 +62,27 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
+    @IBAction func textEditingChanged(_ textField: UITextField){
+        celsiusLabel.text = textField.text
+        
+        if let text = textField.text, !text.isEmpty{
+            celsiusLabel.text = text
+        }else{
+            celsiusLabel.text = "???"
+        }
+        
+        //Checking if field has some text and if it can be represented as a double
+//        if let text = textField.text, let val = Double(text){
+//            fahrenheitValue = Measurement(value: val, unit: .fahrenheit)
+//        }else{
+//            fahrenheitValue = nil
+//        }
+    }
+    
     //dismisses keyboard when screen is tapped
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer){
         textField.resignFirstResponder()
+        textField2.resignFirstResponder()
     }
     
     //Called in the didSet after the fahrentheit is set.
