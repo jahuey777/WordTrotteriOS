@@ -42,7 +42,24 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("ConverViewController loaded its view")
+        
         updateCelsiusLabel()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //getting the time and changing the background color.
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        
+        if hour < 18, hour > 6{
+            self.view.backgroundColor = UIColor.yellow
+        }else if hour < 6, hour > 18 {
+            self.view.backgroundColor = UIColor.black
+        }
+
     }
     
     @IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField){

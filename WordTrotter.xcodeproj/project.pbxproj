@@ -16,6 +16,7 @@
 		B1EE53BB1F9A636D000F4C1B /* WordTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EE53BA1F9A636D000F4C1B /* WordTrotterUITests.swift */; };
 		B1EE53C91F9E599F000F4C1B /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EE53C81F9E599F000F4C1B /* ConversionViewController.swift */; };
 		B1EE53CC1FA3D295000F4C1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EE53CB1FA3D295000F4C1B /* MapKit.framework */; };
+		B1EE53CE1FA7816B000F4C1B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EE53CD1FA7816B000F4C1B /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B1EE53BC1F9A636D000F4C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1EE53C81F9E599F000F4C1B /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		B1EE53CB1FA3D295000F4C1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B1EE53CD1FA7816B000F4C1B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				B1EE53A31F9A636C000F4C1B /* LaunchScreen.storyboard */,
 				B1EE53A61F9A636C000F4C1B /* Info.plist */,
 				B1EE53C81F9E599F000F4C1B /* ConversionViewController.swift */,
+				B1EE53CD1FA7816B000F4C1B /* MapViewController.swift */,
 			);
 			path = WordTrotter;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				B1EE539D1F9A636C000F4C1B /* ViewController.swift in Sources */,
 				B1EE53C91F9E599F000F4C1B /* ConversionViewController.swift in Sources */,
 				B1EE539B1F9A636C000F4C1B /* AppDelegate.swift in Sources */,
+				B1EE53CE1FA7816B000F4C1B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
